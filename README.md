@@ -3,17 +3,18 @@
 ## Install
 
 ```bash
-brew install awafinance/tap/awa
+brew tap awafinance/tap
+brew install awa-cli
 ```
 
 ## Upgrade
 
 ```bash
-brew upgrade awa
+brew upgrade awa-cli
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall awa
+brew uninstall awa-cli
 ```
