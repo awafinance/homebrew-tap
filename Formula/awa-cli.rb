@@ -5,20 +5,20 @@
 class AwaCli < Formula
   desc "Awa Finance CLI"
   homepage "https://awafinance.com"
-  version "0.2.3"
+  version "0.2.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://releases.awafinance.com/v0.2.3/awa_Darwin_x86_64.tar.gz"
-      sha256 "77a697d710a91180983fb136d1530e2115ea95bcdc8b5af3bc2d702e94dfec38"
+      url "https://releases.awafinance.com/v0.2.4/awa_Darwin_x86_64.tar.gz"
+      sha256 "91eb17f7427a9157e6d150e840d7e32bce77cb8cabce8a4367ae8367ed01840b"
 
       define_method(:install) do
         bin.install "awa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://releases.awafinance.com/v0.2.3/awa_Darwin_arm64.tar.gz"
-      sha256 "0bfc288d87d18b33866ebff409b5e0ba77da5105142a86b62d1f0aca0e17544c"
+      url "https://releases.awafinance.com/v0.2.4/awa_Darwin_arm64.tar.gz"
+      sha256 "c8e235c202267042ae284238f0b5f3a1a0026f292ef6bc1b693c04801a15c009"
 
       define_method(:install) do
         bin.install "awa"
@@ -28,15 +28,15 @@ class AwaCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://releases.awafinance.com/v0.2.3/awa_Linux_x86_64.tar.gz"
-      sha256 "52f1bd027aa892dec071dc44d46a557cbbe402747d2c55d17e011a91de0de5c3"
+      url "https://releases.awafinance.com/v0.2.4/awa_Linux_x86_64.tar.gz"
+      sha256 "c25146d3b113ff91b42bd2aeec17fead33b6fb3e1e9940abc76aeb0f073344d4"
       define_method(:install) do
         bin.install "awa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://releases.awafinance.com/v0.2.3/awa_Linux_arm64.tar.gz"
-      sha256 "394d13abc9fc4dc4a651d094c583381252d9a83c4d466e8800d7755569595464"
+      url "https://releases.awafinance.com/v0.2.4/awa_Linux_arm64.tar.gz"
+      sha256 "68ace65926ea3a435381bd17267152594305344c788b3994a7ed580fff467b21"
       define_method(:install) do
         bin.install "awa"
       end
